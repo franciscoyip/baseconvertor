@@ -3,14 +3,12 @@
 
   describe('Stack Tests', function () {
 
-    var mystack = null;
 
-    beforeEach(function(done){
-        mystack = new Stack();
-        done();
-    });
 
     describe('Test on zero elements', function () {
+      var mystack = null;
+      mystack = new Stack();
+
       it('should be empty', function () {
         expect(mystack.isEmpty()).to.equal(true);
       });
@@ -23,6 +21,9 @@
     });
 
     describe('Test on one element', function(){
+      var mystack = null;
+      mystack = new Stack();
+
       var obj = new Object();
       mystack.push(obj);
 
