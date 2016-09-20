@@ -8,7 +8,7 @@ Stack.prototype = {
   pop: function(){
     return this.array.pop();
   },
-  length: function(){
+  size: function(){
     return this.array.length;
   },
   peek: function(){
